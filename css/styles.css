@@ -760,12 +760,7 @@ img {
   opacity: 0;
 }
 
-/* .project a:hover .project-content,
+.project a:hover .project-content,
 .project a:focus .project-content {
-  opacity: 1;
-} */
-
-.project-thumb:hover .project-content,
-.project-thumb:focus .project-content {
   opacity: 1;
 }
