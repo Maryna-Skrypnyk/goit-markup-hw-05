@@ -58,7 +58,6 @@ body {
   padding-right: 15px;
 
   width: 1200px;
-  outline: 2px solid tomato;
 }
 
 /* Site nav */
@@ -133,8 +132,23 @@ body {
   text-decoration: none;
 }
 
+.site-nav .item {
+  position: relative;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
+}
+
+.link.current::after {
+  position: absolute;
+  bottom: -1px;
+  border-radius: 2px;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
 }
 
 .contacts .item.mail {
@@ -258,6 +272,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #2f303a;
+  border-top: 1px solid #ececec;
 }
 
 .container-header {
