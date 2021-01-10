@@ -438,16 +438,21 @@ section {
   /* overflow: hidden; */
 }
 
-.work-thumb .title {
+.title-overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.title-overlay .title {
   margin: 0;
   padding: 27px 0;
 
   color: var(--primary-white-color);
   text-align: center;
-  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* Section team */
@@ -805,27 +810,30 @@ img {
   overflow: hidden;
 }
 
-.project-content {
+.project-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translatey(100%);
+  transition: transform 250ms var(--timing-function);
+}
+
+.project a:hover .project-overlay,
+.project a:focus .project-overlay {
+  transform: translatey(0);
+}
+
+.project-content {
   margin: 0;
   padding: 64px 24px;
-  transform: translatey(100%);
-
-  transition: transform 250ms var(--timing-function);
 
   color: var(--primary-white-color);
   font-size: var(--title-project-font-size);
   line-height: 1.56;
   font-weight: var(--primary-font-weight);
-  background-color: rgba(33, 150, 243, 0.9);
-}
-
-.project a:hover .project-content,
-.project a:focus .project-content {
-  transform: translatey(0);
 }
