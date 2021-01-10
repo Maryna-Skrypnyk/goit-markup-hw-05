@@ -823,13 +823,9 @@ img {
   line-height: 1.56;
   font-weight: var(--primary-font-weight);
   background-color: rgba(33, 150, 243, 0.9);
-
-  /* opacity: 0; */
 }
 
-.project:hover .project-content,
-.project:focus .project-content {
-  /* opacity: 1; */
-
+.project a:hover .project-content,
+.project a:focus .project-content {
   transform: translatey(0);
 }
